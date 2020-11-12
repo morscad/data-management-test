@@ -1,0 +1,40 @@
+.paginator__container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+    padding-top: 16px;;
+}
+
+.paginator__page {
+    width: 16px;
+    height: 16px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+.paginator__page-active {
+    background-color: #1B2881;
+    color: #ffffff;
+    cursor: pointer;
+    &:hover {
+        background-color: #32649E; 
+    }
+}
+
+.paginator__page-inactive {
+    background-color: #DCE5E0;
+    color: #1D0C5D;
+}
+
+@media (max-width: 768px) {
+    .paginator__container {
+      width: calc(100% - 32px);
+      margin: 0 16px;
+    }
+}
